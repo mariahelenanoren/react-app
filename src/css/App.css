@@ -1,0 +1,22 @@
+.App-wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+}
+
+.App-header {
+  grid-area: header;
+}
+
+.App-main {
+  grid-area: main;
+
+}
+
+.App-footer {
+  grid-area: footer;
+}

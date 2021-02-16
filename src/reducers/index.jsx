@@ -1,0 +1,1 @@
+import {combineReduxers} from "react-redux";
