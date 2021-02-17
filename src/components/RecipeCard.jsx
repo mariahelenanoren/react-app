@@ -1,5 +1,5 @@
 import React from "react";
-import { renderRecipe, changeChosenRecipe } from "../actions";
+import { changeMainState, changeChosenRecipe } from "../actions";
 import { connect } from "react-redux";
 import "../css/RecipeCard.css";
 
@@ -7,22 +7,21 @@ class RecipeCard extends React.Component {
   constructor(props) {
     super(props);
 
-    this.handleClick = this.handleClick.bind(this);
+    this.handleClicks = this.handleClicks.bind(this);
   }
 
-  handleClick() {
+  handleClicks() {
     this.props.changeChosenRecipe(
       this.props.items.id,
       this.props.items.title,
       this.props.items.img
     );
-    this.props.renderRecipe();
+    this.props.changeMainState("recipe");
   }
 
   render() {
-    console.log(this.props);
     return (
-      <div className="recipe-card" onClick={this.handleClick}>
+      <div className="recipe-card" onClick={this.handleClicks}>
         <img src={this.props.items.img} />
         <div className="recipe-name">
           <h2>{this.props.items.title}</h2>
@@ -40,7 +39,7 @@ function mapStateToProps(state) {
 }
 
 const mapDispatchToProps = {
-  renderRecipe,
+  changeMainState,
   changeChosenRecipe,
 };
 

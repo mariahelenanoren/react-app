@@ -4,19 +4,38 @@ import React from "react";
 import Search from "./Search";
 import SearchResults from "./SearchResults";
 import Recipe from "./Recipe";
+import { savePrevState } from "../actions";
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
   }
 
+  componentDidUpdate(prevProps) {
+    if (this.props.mainState !== prevProps) {
+      this.props.savePrevState(prevProps.mainState);
+    }
+  }
+
   render() {
     if (this.props.mainState === "search") {
-      return <Search />;
+      return (
+        <div className="App-main">
+          <Search />
+        </div>
+      );
     } else if (this.props.mainState === "searchResults") {
-      return <SearchResults />;
+      return (
+        <div className="App-main">
+          <SearchResults />
+        </div>
+      );
     } else if (this.props.mainState === "recipe") {
-      return <Recipe />;
+      return (
+        <div className="App-main">
+          <Recipe />
+        </div>
+      );
     } else {
       return (
         <div className="App-main">
@@ -29,13 +48,14 @@ class Main extends React.Component {
 }
 
 function mapStateToProps(state) {
-  console.log(state);
   return {
     mainState: state.mainState,
   };
 }
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = {
+  savePrevState,
+};
 
 const MainContainer = connect(mapStateToProps, mapDispatchToProps)(Main);
 

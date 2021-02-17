@@ -1,75 +1,76 @@
 .search-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .call-to-action {
-    width: 100%;
-    margin-top: 6rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  margin: 6rem 0 4rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .call-to-action h2 {
-    font-size: 2rem;
-    text-align: center;
-    max-width: 25rem;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 25rem;
 }
 
 .search-container {
-    position: relative;
-    display: flex;
-    height: 2.5rem;
-    width: 100%;
-    max-width: 35rem;
-    margin-top: 1rem;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    background-color: white;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.1)
+  position: relative;
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  max-width: 35rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .search-container button {
-    background-color: #A5CE00;
-    padding: 0 1.5rem;
-    color: white;
-    border: 0;
-    font-weight: 600;
-    height: 100%;
-    font-size: 1rem;
-    text-shadow: 0px 1px 2px rgba(0,0,0,0.26);
-    cursor: pointer;
+  background-color: #a5ce00;
+  padding: 0 1.5rem;
+  color: white;
+  border: 0;
+  font-weight: 600;
+  height: 100%;
+  font-size: 1rem;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
 }
 
 .search-container button:hover {
-    background-color: #9bc200;
+  background-color: #9bc200;
 }
 
 .search-container input {
-    padding: 0 1rem;
-    outline: none;
-    height: 100%;
-    width: 100%;
-    border: 0;
-    background-color: white;
+  padding: 0 1rem;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  background-color: white;
 }
 
 .search-container input:active,
 .search-container input:focus {
-    border: 1.5px solid #A5CE00;
+  border: 1.5px solid #a5ce00;
 }
 
 .hero {
-    position: absolute;
-    width: 100%;
-    height: 25rem;
-    object-fit: cover;
-    object-position: center;
-    opacity: 20%;
-    z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  object-position: center;
+  opacity: 20%;
+  z-index: 0;
 }
