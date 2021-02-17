@@ -12,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 5rem;
+  min-height: 4.5rem;
   background-color: #a5ce00;
   grid-area: header;
 }
@@ -35,4 +36,16 @@
 .App-main {
   padding-bottom: 3rem;
   grid-area: main;
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    padding: 1.2rem 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    padding: 1.2rem 2rem;
+  }
 }

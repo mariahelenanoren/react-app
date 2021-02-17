@@ -33,16 +33,26 @@ class Header extends React.Component {
   }
 
   render() {
-    return (
-      <div className="App-header">
-        <h1 className="App-name">
-          <a href="./">Simply delicious</a>
-        </h1>
-        <button className="back-button" onMouseUp={this.handleClick}>
-          Go back
-        </button>
-      </div>
-    );
+    if (this.props.mainState === "search") {
+      return (
+        <div className="App-header">
+          <h1 className="App-name">
+            <a href="./">Simply delicious</a>
+          </h1>
+        </div>
+      );
+    } else {
+      return (
+        <div className="App-header">
+          <h1 className="App-name">
+            <a href="./">Simply delicious</a>
+          </h1>
+          <button className="back-button" onMouseUp={this.handleClick}>
+            Go back
+          </button>
+        </div>
+      );
+    }
   }
 }
 

@@ -29,3 +29,24 @@
 .recipe-summary {
   margin-top: 2rem;
 }
+
+@media (max-width: 768px) {
+  .recipe-container {
+    padding: 0 3.5rem;
+  }
+
+  .recipe-header {
+    width: 100%;
+    padding: 3rem 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-container {
+    padding: 0 2rem;
+  }
+
+  .recipe-header {
+    padding: 3rem 1.5rem;
+  }
+}
