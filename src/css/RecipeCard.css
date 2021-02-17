@@ -1,3 +1,23 @@
 .recipe-card {
-    background-color: white;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.recipe-name {
+  padding: 1.5rem 1rem;
+}
+
+.recipe-name h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
 }

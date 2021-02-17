@@ -2,22 +2,23 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-areas: 
-  "header"
-  "main";
+  grid-template-areas:
+    "header"
+    "main";
 }
 
 .App-header {
   padding: 1.8rem 5rem;
-  background-color: #A5CE00;
-  color: white;
+  background-color: #a5ce00;
   grid-area: header;
 }
 
-.App-header p {
+.App-name {
   margin: 0;
+  font-size: 1rem;
   font-weight: 500;
-  text-shadow: 0px 1px 2px rgba(0,0,0,0.26);
+  color: white;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.26);
 }
 
 .App-main {

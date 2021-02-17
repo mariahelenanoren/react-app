@@ -1,10 +1,11 @@
 import { createStore } from "redux";
-import allReducers from "../reducers/index"
+import allReducers from "../reducers/index";
 
 const initalState = {
   mainState: "search",
-  searchTerm: ""
-}
+  searchTerm: "",
+  chosenRecipe: "",
+};
 
 const store = createStore(
   allReducers,

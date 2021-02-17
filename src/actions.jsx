@@ -1,6 +1,6 @@
 export const renderSearch = () => ({
   type: "SEARCH",
-  mainState: "search"
+  mainState: "search",
 });
 
 export const renderResults = () => ({
@@ -15,5 +15,14 @@ export const renderRecipe = () => ({
 
 export const updateSearchTerm = (value) => ({
   type: "UPDATE_SEARCH_TERM",
-  searchTerm: value
+  searchTerm: value,
+});
+
+export const changeChosenRecipe = (id, title, img) => ({
+  type: "CHANGE_CHOSEN_RECIPE",
+  payload: {
+    id: id,
+    title: title,
+    img: img,
+  },
 });
