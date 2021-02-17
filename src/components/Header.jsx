@@ -3,7 +3,7 @@ import "../css/App.css";
 function Header() {
   return (
     <div className="App-header">
-      <p>This is the header</p>
+      <p>Simply delicious</p>
     </div>
   );
 }

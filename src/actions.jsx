@@ -1,9 +1,19 @@
-export const sayHello = (greeting) => ({
-    type: "SAY_HELLO",
-    greeting
+export const renderSearch = () => ({
+  type: "SEARCH",
+  mainState: "search"
 });
 
-export const sayGoodbye = (hello) => ({
-    type: "SAY_GOODBYE",
-    greeting: "Goodbye"
+export const renderResults = () => ({
+  type: "SEARCH_RESULTS",
+  mainState: "searchResults",
+});
+
+export const renderRecipe = () => ({
+  type: "RECIPE",
+  mainState: "recipe",
+});
+
+export const updateSearchTerm = (value) => ({
+  type: "UPDATE_SEARCH_TERM",
+  searchTerm: value
 });

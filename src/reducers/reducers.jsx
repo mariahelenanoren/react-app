@@ -1,10 +1,20 @@
+export const changeMainState = (state = "search", action) => {
+  switch (action.type) {
+    case "SEARCH":
+      return action.mainState;
+    case "SEARCH_RESULTS":
+      return action.mainState;
+    case "RECIPE":
+      return action.mainState;
+    default:
+      return state;
+  }
+};
 
-export const greeting = (state = {}, action) => {
+export const updateSearchTerm = (state = "", action) => {
     switch (action.type) {
-        case "SAY_HELLO":
-            return action;
-        case "SAY_GOODBYE":
-            return action;
+        case "UPDATE_SEARCH_TERM":
+            return action.searchTerm
         default:
             return state;
     }
