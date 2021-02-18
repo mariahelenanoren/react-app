@@ -6,11 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ---
 
-## Getting started
+## Installation
 
-### `npm install` 
+```
+# If you use npm:
+npm install react-redux
 
-Installs all the required dependencies.
+# Or if you use Yarn:
+yarn add react-redux
+```
 
 ### `npm start`
 
