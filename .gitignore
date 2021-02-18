@@ -1,9 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-Search.jsx
-SearchResults.jsx
-Recipe.jsx
-.gitignore
+ApiKey.jsx
 
 # dependencies
 /node_modules
@@ -26,7 +23,3 @@ Recipe.jsx
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-./src/components/Search.jsx
-./src/components/Search.jsx
-./src/components/SearchResults.jsx
-./src/components/Recipe.jsx
