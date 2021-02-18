@@ -16,7 +16,7 @@ class Search extends React.Component {
       recipesHaveMounted: false,
     };
 
-    this.searchTerm = "";
+    this.searchTerm = this.props.searchTerm;
     this.recipeResults = [];
 
     this.handleInput = this.handleInput.bind(this);
