@@ -8,13 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Installation
 
-```
-# If you use npm:
-npm install react-redux
+### `npm install`
 
-# Or if you use Yarn:
-yarn add react-redux
-```
+Installs all the neccessary dependencies.
 
 ### `npm start`
 
@@ -23,6 +19,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+## API key
+
+This project uses the API [Spoonacular](https://spoonacular.com/food-api). To be able to run the application you need to get you own API key from their website. You then create a function component in `src/components` called `ApiKey.jsx` which returns you personal API key as a string in the format `const key = "apiKey=90234790v340292dfiof"`.
+
+After this the application should run without trouble.
 
 ## Available Scripts
 
