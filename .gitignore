@@ -29,3 +29,4 @@ yarn-error.log*
 ./src/components/Search.jsx
 ./src/components/Search.jsx
 ./src/components/SearchResults.jsx
+./src/components/Recipe.jsx
