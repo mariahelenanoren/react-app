@@ -38,11 +38,19 @@
   grid-area: main;
 }
 
+/* ------------------------------------------------------------ */
+/* MEDIA QUERIES
+/* ------------------------------------------------------------ */
+
+/* TABLET SMALL */
+
 @media (max-width: 768px) {
   .App-header {
     padding: 1.2rem 3.5rem;
   }
 }
+
+/* MOBILE */
 
 @media (max-width: 480px) {
   .App-header {
